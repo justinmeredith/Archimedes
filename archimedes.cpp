@@ -1,12 +1,19 @@
 #include <iostream>
-#include <string>
 using namespace std;
 
 string user_input;
 
-int main() {
+string getUserCalculation() {
+    string input;
     cout << "Please enter your calculation.\n     > ";
-    getline(cin, user_input);
+    getline(cin, input);
+    return input;
+}
+
+int main() {
+
+    user_input = getUserCalculation();
     cout << "Your requested calculation is " << user_input;
+
     return 0;
 }
