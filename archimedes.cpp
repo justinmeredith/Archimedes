@@ -57,7 +57,9 @@ vector<string> tokenizeStringAsVector(string input_string) {
 }
 
 // Performs operations on the user's input in the order of PEMDAS
-int performOperations(string input_string) {
+// This isn't actually going to be a 'void' function, I just changed it from 'int' to 'void' to make
+// VS Code stop giving me an error o-O
+void performOperations(string input_string) {
     // placeholder
 }
 
